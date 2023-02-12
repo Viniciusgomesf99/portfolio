@@ -1,11 +1,38 @@
 body {
     background-color: #fdfdfd;
-    font-family: 'Futura';
+    font-family: 'Oswald';
 }
 
 p {
-    font-weight: 250;
+    font-weight: 350;
     font-size: 16px;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.port-menu {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 125px;
+}
+
+.icones {
+    height:36px;
+    width:36px;
+}
+
+.port-social {
+    display:flex;
+    gap:0px 20px;
+    height: 36px;
 }
 
 .switch {
@@ -113,6 +140,7 @@ input:checked+.slider:before {
     justify-content: center;
     margin-top:5rem;
     gap:300px;
+    align-items: center;
 }
 
 .port-presentation-history {
@@ -121,8 +149,8 @@ input:checked+.slider:before {
 }
 
 .port-presentation-image {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     border:3px solid #2196F3;
 }
@@ -185,11 +213,14 @@ input:checked+.slider:before {
 
 .port-projects-1 h3 {
     text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Lato';
 }
 
 .port-projects-1 p {
     font-weight: 250;
     line-height: 1.5rem;
+    padding:10px 100px;
 }
 
 .port-projects-1-details {
@@ -199,6 +230,7 @@ input:checked+.slider:before {
     color:white;
     cursor: pointer;
     margin-bottom: 10px;
+    border:1px solid black;
 }
 
 .port-categories-button:active {

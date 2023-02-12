@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,110 +8,130 @@
     <title>Vinicius Gomes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="imagem/png" href="./assets/Perfil.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200;300;400&display=swap"
+        rel="stylesheet">
     <script src="./index.js" defer></script>
 </head>
+
 <body>
-
-    <header class="port-options">
-        <div class="port-options-languageSwitch">
-            <p class="port-options-languageSwitch-Light" >Light</p>
-                
-        <div class="port-options-themeSwitch">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
+    <nav class="port-menu">
+        <div>
+            <img src="./assets/html.icon" class='icones' alt="Icone Html">
+            <img Icone src="./assets/css.png" class='icones' alt="Icone CSS">
+            <img src="./assets/Js.png" class='icones' alt="Icone Javascript">
+            <img src="./assets/tsIcon.png" class='icones' alt="Icone Typescript">
+            <img src="./assets/python.png" class='icones' alt="Icone Python">
+            <img Icone src="./assets/SQL.png" class='icones' alt="Icone CSS">
         </div>
-            <p class="port-options-languageSwitch-Dark" >Dark</p>
+        <div>
+            <ul class="port-social">
+                <li><a href="https://www.linkedin.com/in/vinicius-gomes-franco-27b7a5206/"><img
+                            src="./assets/linkedin.png" alt="link para meu linkedin" class="icones"></a></li>
+                <li><a href="https://github.com/Viniciusgomesf99"><img src="./assets/github.png"
+                            alt="link para o meu github" class="icones"></a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5534984038239&text&type=phone_number&app_absent=0"><img
+                            src="./assets/whatsapp.png" alt="link para o meu whatsapp" class="icones"></a></li>
+            </ul>
         </div>
-
-    </header>
+    </nav>
 
     <div class="port-presentation">
+
         <div class="port-presentation-history">
-            <div class="port-presentation-history-iam">
+            <div class="port-presentation-history-iam" style="font-family: 'Lato';">
                 <h1>Olá, eu sou </h1>
                 <h1 class="port-presentation-history-iam-name">Vinicius Gomes</h1>
             </div>
-            
-            <h3>Amante da matemática, estudante de engenharia e programador</h3>
-            <p> Texto
-                <strong>Texto</strong> Texto<br> Texto</p>
+
+            <h3 style="font-size:1.2rem;">Amante da matemática, estudante de engenharia e programador</h3>
+            <p>
+                Iniciei meus estudos aos 15 anos, com portugol sendo a base para o entendimento da lógica de
+                programação,<br>
+                linguagem C foi a base para os estudos de algoritmos e estruturas de dados, também tive algumas
+                passagens<br>
+                por java no ínicio, porém a curiosidade por trás dos softwares e websites me levaram ao Javascript.<br>
+                Para tornar-me um front-end developer, estudei à fundo HTML e suas boas práticas, CSS e seus mais<br>
+                váriados conteúdos como: pre-processadores, responsividade, váriáveis, mixins, bootstrap, até chegar
+                como nível<br>
+                final em Tailwind e sua vasta gama de ferramentas que garantem a eficiência que o mercado busca.
+            </p>
+
+            <p>
+                Experiência com C, HTML, CSS, Javascript, React, Node, SQL e python. Menções honrosas para FIGMA,
+                Photoshop e Adobe Illustrator.
+            </p>
         </div>
 
         <img src="./assets/Perfil.jpg" alt="Protagonista do protfólio" class="port-presentation-image">
 
     </div>
 
-    <section class="port-categories">
-            <button class='port-categories-button' onclick="handleAll()">Todos</button>
-            <button class='port-categories-button' onclick="handleHTMLCSS()">HTML/CSS</button>
-            <button class='port-categories-button' onclick="handleJS()">Javascript</button>
-            <button class='port-categories-button' onclick="handleJava()">Java</button>
-            <button class='port-categories-button' onclick="handlePython()">Python</button>
-            <button class='port-categories-button' onclick="handleWordpress()">Wordpress</button>
+    <section class="port-categories" id="projects-categories">
+        <button class='port-categories-button' onclick="handleAll()">Todos</button>
+        <button class='port-categories-button' onclick="handleHTMLCSS()">HTML/CSS</button>
+        <button class='port-categories-button' onclick="handleJS()">Javascript</button>
+        <button class='port-categories-button' onclick="handleJava()">Java</button>
+        <button class='port-categories-button' onclick="handlePython()">Python</button>
+        <button class='port-categories-button' onclick="handleWordpress()">Wordpress</button>
     </section>
 
     <section class="port-projects">
         <div class="port-projects-1 wordpress">
+            <h3>Engineering Website</h3>
             <img src="./assets/Januario/januariofront.jpg" alt="Website de engenharia">
-            <h3>Website de Engenharia</h3>
-            <p>Neste projeto desenvolvi um site com 5 páginas, uma home page longa e uma loja de e-commerce. Todo um SEO foi detalhado para o site obter melhores estatísticas. Otimização com A-rank no site de teste do Google.</p>
+            <p>Neste projeto desenvolvi um site com 5 páginas, uma home page longa e uma loja de e-commerce. Todo um SEO
+                foi detalhado para o site obter melhores estatísticas. Otimização com A-rank no site de teste do Google.
+            </p>
             <button class="port-projects-1-details">Ver mais</button>
         </div>
 
         <div class="port-projects-1 wordpress">
+            <h3>Engineering Website</h3>
             <img src="./assets/Realiza/realizafront1.jpg" alt="Website de engenharia">
-            <h3>Website de Engenharia</h3>
-            <p>quando entrei na empresa júnior não me sentia tão confiante, então fui estudar, num destes tempos de estudo desenvolvi este site. Neste caso de estudo construí apenas as paginas do site, SEO e otimização básica.</p>
-<button class="port-projects-1-details">Ver mais</button>
+            <p>quando entrei na empresa júnior não me sentia tão confiante, então fui estudar, num destes tempos de
+                estudo desenvolvi este site. Neste caso de estudo construí apenas as paginas do site, SEO e otimização
+                básica.</p>
+            <button class="port-projects-1-details">Ver mais</button>
         </div>
 
         <div class="port-projects-1 htmlcss">
+            <h3>Order Ifood</h3>
             <img src="./assets/Ifood/orderIfood.png" alt="Pagina de pedidos no ifood feita em HTML e CSS">
-            <h3>Pagina "Order" Ifood</h3>
-            <p>Neste projeto foi replicado a pagina de pedidos do ifood utilizando como base um restaurante de comida japonesa</p>
-<button class="port-projects-1-details">Ver mais</button>
+            <p>Neste projeto foi replicado a pagina de pedidos do ifood utilizando como base um restaurante de comida
+                japonesa</p>
+            <button class="port-projects-1-details">Ver mais</button>
         </div>
 
         <div class="port-projects-1 htmlcss">
-            <img src="./assets/Ableton/Ableton-page.png" alt="">
             <h3>Ableton Website</h3>
-            <p>Utilizando o site Frontend Practice como base, desenvolvi a home page de um site genérico de nome "Ableton", utilizando HTML/SCSS, totalmente responsivo com flexbox e gridbox</p>
-<button class="port-projects-1-details">Ver mais</button>
+            <img src="./assets/Ableton/Ableton-page.png" alt="Replica de um site de nome Ableton">
+            <p>Utilizando o site Frontend Practice como base, desenvolvi a home page de um site genérico de nome
+                "Ableton", utilizando HTML/SCSS, totalmente responsivo com flexbox e gridbox</p>
+            <button class="port-projects-1-details">Ver mais</button>
         </div>
 
-        <div class="port-projects-1">
-            <img src="./assets/Capturar.PNG" alt="">
-            <h3>Legenda</h3>
-            <p>Description</p>
-<button class="port-projects-1-details">Ver mais</button>
+        <div class="port-projects-1 htmlcss">
+            <h3>Whatsapp interface</h3>
+            <img src="./assets/Whatsapp/whatsapp.png" alt="Replica da interface whatsapp">
+            <p>Neste projeto foi utilizado HTML+CSS para replicar a interface do whatsapp e o tema foi "Whatsapp dos
+                sonhos"</p>
+            <button class="port-projects-1-details">Ver mais</button>
         </div>
 
-        <div class="port-projects-1">
-            <img src="./assets/Capturar.PNG" alt="">
-            <h3>Legenda</h3>
-            <p>Description</p>
-<button class="port-projects-1-details">Ver mais</button>
-        </div>
-
-        <div class="port-projects-1">
-            <img src="./assets/Capturar.PNG" alt="">
-            <h3>Legenda</h3>
-            <p>Description</p>
-<button class="port-projects-1-details">Ver mais</button>
-        </div>
-
-        <div class="port-projects-1">
-            <img src="./assets/Capturar.PNG" alt="">
-            <h3>Legenda</h3>
-            <p>Description</p>
-<button class="port-projects-1-details">Ver mais</button>
+        <div class="port-projects-1 htmlcss">
+            <h3>Serasa Interface</h3>
+            <img src="./assets/Serasa/Serasa.png" alt="">
+            <p>Afim de treinar os conhecimentos em HTML/CSS foi replicado a interface do site mais famoso de negociações
+                financeiras, Serasa</p>
+            <button class="port-projects-1-details">Ver mais</button>
         </div>
 
     </section>
 
 
-    
+    <script src="https://kit.fontawesome.com/12f10a7ac7.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

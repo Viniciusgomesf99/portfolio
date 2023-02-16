@@ -9,7 +9,7 @@ p {
 }
 
 a {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -18,49 +18,49 @@ ul li {
 }
 
 .port-menu {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 125px;
 }
 
 .port-menu div img {
-    width:36px;
-    height:36px;
+    width: 36px;
+    height: 36px;
 }
 
-.port-social {
-    display:flex;
-    gap:0px 20px;
+.port-menu-socials {
+    display: flex;
+    gap: 0px 20px;
 }
 
 .port-social li {
-    width:36px;
-    height:36px;
+    width: 36px;
+    height: 36px;
 }
 
 .port-options {
-    margin-top:0 auto;
-    display:flex;
+    margin-top: 0 auto;
+    display: flex;
     flex-direction: row;
     justify-content: right;
     padding: 15px;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     margin-right: 6rem;
 }
 
 .port-presentation {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top:5rem;
-    gap:300px;
+    margin-top: 5rem;
+    gap: 300px;
     align-items: center;
 }
 
 .port-presentation-history {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -68,62 +68,62 @@ ul li {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border:3px solid #2196F3;
+    border: 3px solid #2196F3;
 }
 
 .port-presentation-history-iam {
-    display:flex;
-    gap:10px;
+    display: flex;
+    gap: 10px;
 }
 
 .port-presentation-history-iam-name {
-    display:block;
+    display: block;
     background-color: #2196F3;
     box-sizing: border-box;
-    padding:0px 10px;
-    color:white;
+    padding: 0px 10px;
+    color: white;
 }
 
 .port-categories {
-    margin-top:10vh;
-    display:flex;
+    margin-top: 10vh;
+    display: flex;
     justify-content: center;
     align-content: center;
     gap: 3vw;
 }
 
-.port-categories button{
+.port-categories button {
     border-radius: 8%;
-    padding:10px;
+    padding: 10px;
     cursor: pointer;
     background-color: #2196F3;
-    color:white;
+    color: white;
     font-weight: 700;
-    border:none;
+    border: none;
 }
 
 .port-projects {
-    margin:5vh 0vh;
-    display:flex;
+    margin: 5vh 0vh;
+    display: flex;
     justify-content: center;
-    gap:3vw;
+    gap: 3vw;
     flex-wrap: wrap;
 }
 
-.port-projects img{
+.port-projects img {
     height: 350px;
     cursor: pointer;
 }
 
 .port-projects-1 {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border:1px solid black;
+    border: 1px solid black;
     padding: 5px 15px;
     text-overflow: clip;
-    width:60vw;
+    width: 60vw;
     border-radius: 10px;
 }
 
@@ -136,19 +136,132 @@ ul li {
 .port-projects-1 p {
     font-weight: 250;
     line-height: 1.5rem;
-    padding:10px 100px;
+    padding: 10px 100px;
 }
 
 .port-projects-1-details {
     background-color: #2196F3;
     border-radius: 10px;
     padding: 5px 10px;
-    color:white;
+    color: white;
     cursor: pointer;
     margin-bottom: 10px;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 .port-categories-button:active {
     background-color: aqua;
+}
+
+@media (max-width:600px) {
+
+    * {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+
+    .port-menu {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .port-menu-languages {
+        display: none;
+    }
+
+    .port-menu-socials {
+        padding: 0px;
+        gap: 10px;
+        margin-top: 2vh;
+    }
+
+    .port-social {
+        flex-direction: row;
+
+    }
+
+    .port-presentation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        text-align: left;
+        padding: 0px 20px;
+        max-width: 400px;
+        margin-top: 3vh;
+    }
+
+    .port-presentation-image {
+        width: 100px;
+        height: 100px;
+        margin-top: 2vh;
+    }
+
+    .port-presentation-history {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        justify-content: center;
+    }
+
+    .port-categories {
+        justify-content: center;
+        max-width: 400px;
+        gap: 0px;
+        background-color: #2196F3;
+        margin-top: 3vh;
+    }
+
+    .port-categories button {
+        font-size: .7rem;
+        padding: 5px 0px;
+        border: none;
+        text-align: center;
+    }
+
+    .port-presentation-history-iam {
+        font-size: .8rem;
+        margin-bottom: 3vh;
+    }
+
+    .port-presentation-history h3 {
+        margin-top: 1.5vh;
+    }
+
+    .port-presentation-history>p {
+        margin-top: 1.5vh;
+    }
+
+    .port-presentation-history-iam-name {
+        font-size: 1.3rem;
+    }
+
+    .port-projects-1 {
+        margin-top: 2vh;
+        width: auto;
+        margin: 0 20px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .port-projects-1 img {
+        width:inherit;
+        height: 200px;
+    }
+
+    .port-projects-1 p {
+        font-weight: 250;
+        line-height: 1.5rem;
+        padding: 10px 10px;
+        font-size: 1.2rem;
+    }
+
+    .port-projects-1 h3 {
+        margin: 1.5vh 0px;
+    }
+
+
 }

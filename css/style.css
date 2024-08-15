@@ -123,6 +123,7 @@ ul li {
 }
 
 .port-projects img {
+    min-height: 243px;
     height: 243px;
     width: 248px;
     cursor: pointer;
@@ -138,16 +139,16 @@ ul li {
     border: 1px solid black;
     padding: 5px 15px;
     text-overflow: clip;
-    grid-column: span 3;
+    grid-column: span 4;
     grid-row: span 3;
-    height: 487px;
     border-radius: 12px;
 }
 
 .port-projects-1 h3 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 28px;
     font-family: 'Poppins-Bold';
+    min-height: 80px;
 }
 
 .port-projects-1 p {
